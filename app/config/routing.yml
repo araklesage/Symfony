@@ -1,4 +1,16 @@
+
 oc_platform:
     resource: "@OCPlatformBundle/Resources/config/routing.yml"
     prefix:   /platform
+
+login:
+    path: /login
+    defaults:
+        _controller: UserBundle:Security:login
+
+login_chech:
+    path: /login_check
+
+logout:
+    path: /logout
 
